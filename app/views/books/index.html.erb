@@ -1,0 +1,7 @@
+<h1> Весь список книг <h1>
+
+<% @book.each do |book| %>
+
+  <p><%= link_to "Книга #{book.id}", book_path(book)%></p>
+
+<% end %>
